@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.head{
+    background: url(/images/bg.jpg)center center/cover;
+    height: 100vh;
+
+}
+
+.head img{
+    margin: 20px 20px;
+    width: 15%;
+    height: 5%;
+    z-index: 150;
+}
+
+.nav-top{
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-top-right{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-top-right button{
+    margin: 50px 50px;
+    padding: 10px 10px;
+    z-index: 100;
+    border-radius: 5px;
+    
+    
+}
+
+.Signin{
+    color: white;
+    background: red;
+    border: none;
+   
+    
+    
+}
+
+.nav-body{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    
+    
+    
+}
+
+.nav-body h1{
+    font-size: 50px;
+}
+
+
+.nav-body h1,h2,h3,h4{
+    z-index: 100;
+}
+.nav-input-bar{
+    margin-top: 20px;
+    display: flex;
+    width: 40%;
+    gap: 1px;
+    z-index: 100;
+}
+
+.nav-input-bar input{
+    padding: 20px 30px;
+    width: 100%;
+    
+}
+
+.nav-input-bar button{
+    background: red;
+    color: white;
+    width: 40%;
+    border: none;
+}
+
+.head ::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0 ,0 ,0,0.1);
+    box-shadow: 10px 10px 10px 15px #000000, 
+                    inset -12px 10px 10px 15px #000000;
+}
+
+.cards-1{
+    display: flex;
+    background: #000000;
+    color:white;
+    height: 60vh;
+
+}
+
+.desc{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 100px;
+    font-size: 30px;
+}
+
+.desc h1{
+    font-size:60px;
+}
+
+.img-vid{
+    display: flex;
+    flex-direction: row;
+}
+
+.img-vid img{
+    z-index: 100;
+}
+
+.img-vid video{
+    
+    z-index: 1;
+    margin-top: -30px;
+    margin-left: -570px;
+    width: 70%;    
+}
+
+.cards-2{
+    display: flex;
+    background: #000000;
+    color:white;
+    height: 60vh;
+    flex-direction: row-reverse;
+}
+
+.cards-3{
+    display: flex;
+    background: #000000;
+    color:white;
+    height: 60vh;
+    
+
+}
+.cards-3 .img-vid video{
+    
+    z-index: 1;
+    margin-top: -200px;
+    margin-left: -500px;
+    width: 50%;    
+}
+
+.cards-4{
+    display: flex;
+    background: #000000;
+    color:white;
+    height: 60vh;
+    flex-direction: row-reverse;
+}
+.faq{
+
+    background: none;
+    background-color:black;
+    color:#fff;
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+
+}
+
+.faq h1{
+    margin-top: 10px;
+    margin-left: 30%;
+    
+}
+
+
+
+
+.faq li{
+    margin-top: 30px;
+    list-style-type: none;
+    background-color: #303030;
+    width: 50%;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-left: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer{
+    background: black;
+    
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.footer li{
+    list-style: none;
+    gap:10px
+}
+.footer p{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-link{
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-between;   
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-shrink: none;
+    flex-grow: none;
+    row-gap: 30px;
+    
+}
+
+.footer .nav-input-bar{
+    margin-top: 150px;
+    margin-left: 500px;
+}
+
+@media (max-width: 700px){
+    .head img{
+        width: 50%;
+    }
+    .nav-top-right{
+        gap:0px;
+        size: 10px;
+    }
+
+    .nav-top-right button{
+        display: none;
+    }
+    .head{
+        margin: 10px 10px;
+        size: 20px;
+    }
+    .nav-input-bar{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 80%;
+    }
+    
+    .nav-input-bar input{
+        padding: 20px 30px;
+        width: 100%;
+        
+    }
+    
+    .nav-input-bar button{
+        background: red;
+        color: white;
+        width: 40%;
+        border: none;
+    }
+
+    .cards-1{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .cards-2{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .cards-3{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+   
+    .cards-4{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .footer .nav-input-bar{
+        margin-left: 20px;
+    }
+
+    .footer-link{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    
+}
+
+@media (max-width: 400px){
+    .head h1{
+        font-size: 30px;
+    }
+    .nav-input-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-input-bar input{
+        
+        width: 80%;
+        
+    }
+
+
+
+    .nav-input-bar button{
+        padding: 20px 20px;
+        margin-left: 100px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .cards-1  h1{
+        font-size: 30px;
+
+    }
+
+    .cards-1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards-1 img{
+        width: 100%;
+    }
+
+    .img-vid video{
+    
+        z-index: 1;
+        margin-top: -30px;
+        margin-left: -320px;
+        width: 70%;    
+    }
+
+    .cards-2  h1{
+        font-size: 30px;
+
+    }
+
+    .cards-2{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards-2 img{
+        width: 100%;
+    }
+
+    .cards-3  h1{
+        font-size: 30px;
+
+    }
+
+    .cards-3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards-3 img{
+        width: 100%;
+    }
+    .cards-3 .img-vid video{
+    
+        z-index: 1;
+        margin-top: -100px;
+        margin-left: -320px;
+        width: 65%;    
+    }
+
+    .cards-4  h1{
+        font-size: 30px;
+
+    }
+
+    .cards-4{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cards-4 img{
+        width: 100%;
+    }
+
+    .faq h1{
+        font-size: 20px;
+
+    }
+
+    .faq li{
+        margin-left: 30px;
+    }
+
+    .footer .nav-input-bar{
+        margin-left: 0px;
+        
+    }
+    .footer .nav-input-bar input{
+        width: 80%;
+        
+    }
+
+
+
+    
+
+}
